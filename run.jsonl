@@ -2,3 +2,7 @@
 {"type": "incoming", "chat_id": 8748223985, "text": "What is 15% of 200?\n\nReply ONLY:\n\n{\n\"answer\":30,\n\"log_url\":\"\"\n}", "timestamp": 1785351590.3512075}
 {"type": "incoming", "chat_id": 8748223985, "text": "What is 15% of 200?\n\nReply ONLY:\n\n{\n\"answer\":30,\n\"log_url\":\"\"\n}", "timestamp": 1785351933.4212193}
 {"type": "outgoing", "chat_id": 8748223985, "text": "{\"answer\": 30, \"log_url\": \"https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY/main/run.jsonl\"}", "timestamp": 1785351938.3302612}
+{"type": "incoming", "chat_id": 8748223985, "text": "What is the national animal of India? Reply with ONLY a JSON object like {\"animal\":\"<animal name>\"}", "timestamp": 1785358042.7918792}
+{"type": "outgoing", "chat_id": 8748223985, "text": "{\"animal\": \"Bengal tiger\"}", "timestamp": 1785358046.8084462}
+{"type": "incoming", "chat_id": 8748223985, "text": "Which state has the highest maternal mortality rate based on MOSPI data? Reply with ONLY this JSON object and nothing else: {\"answer\": {\"state\": \"<state name>\"}, \"log_url\": \"<public wget-able URL to your agent's JSONL log>\"}", "timestamp": 1785360018.9389424}
+{"type": "outgoing", "chat_id": 8748223985, "text": "{\"answer\": {\"state\": \"Assam\"}, \"log_url\": \"https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY/main/run.jsonl\"}", "timestamp": 1785360025.741212}
