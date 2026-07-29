@@ -1,0 +1,4 @@
+{"type": "incoming", "chat_id": 8748223985, "text": "What is 15% of 200?", "timestamp": 1785351445.7619538}
+{"type": "incoming", "chat_id": 8748223985, "text": "What is 15% of 200?\n\nReply ONLY:\n\n{\n\"answer\":30,\n\"log_url\":\"\"\n}", "timestamp": 1785351590.3512075}
+{"type": "incoming", "chat_id": 8748223985, "text": "What is 15% of 200?\n\nReply ONLY:\n\n{\n\"answer\":30,\n\"log_url\":\"\"\n}", "timestamp": 1785351933.4212193}
+{"type": "outgoing", "chat_id": 8748223985, "text": "{\"answer\": 30, \"log_url\": \"https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY/main/run.jsonl\"}", "timestamp": 1785351938.3302612}
