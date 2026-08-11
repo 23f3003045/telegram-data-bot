@@ -8,11 +8,21 @@ load_dotenv()
 BOT=os.environ["TELEGRAM_BOT_TOKEN"]
 API=os.environ["AIPIPE_TOKEN"]
 LOG_URL=os.environ["LOG_URL"]
+print("AIPIPE_TOKEN loaded:", bool(AIPIPE_TOKEN))
+print("AIPIPE_TOKEN length:", len(AIPIPE_TOKEN))
 client = OpenAI(
     base_url="https://aipipe.org/openai/v1",
     api_key=API,
     timeout=60,
 )
+try:
+    test = client.chat.completions.create(
+        model="gpt-5-mini",
+        messages=[{"role": "user", "content": "Reply only OK"}],
+    )
+    print("AIPIPE TEST:", test.choices[0].message.content)
+except Exception as e:
+    print("AIPIPE STARTUP ERROR:", repr(e))
 LOG_FILE="run.jsonl"
 history={}
 def log(e):
