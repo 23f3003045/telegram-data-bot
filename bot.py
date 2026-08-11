@@ -42,7 +42,13 @@ async def handle(update:Update,context:ContextTypes.DEFAULT_TYPE):
         if isinstance(obj,dict) and "log_url" in obj: obj["log_url"]=LOG_URL
         final=json.dumps(obj,ensure_ascii=False)
     except Exception as e:
-        final=json.dumps({"error":"temporary_failure","details":type(e).__name__})
+        print("AIPIPE ERROR:", repr(e))
+
+    final = json.dumps({
+        "error": "temporary_failure",
+        "details": type(e).__name__
+    })
+ 
     log({"type":"outgoing","chat_id":cid,"text":final})
     await update.message.reply_text(final)
 async def err(update,context): print(context.error)
