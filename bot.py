@@ -8,8 +8,8 @@ load_dotenv()
 BOT=os.environ["TELEGRAM_BOT_TOKEN"]
 API=os.environ["AIPIPE_TOKEN"]
 LOG_URL=os.environ["LOG_URL"]
-print("AIPIPE_TOKEN loaded:", bool(AIPIPE_TOKEN))
-print("AIPIPE_TOKEN length:", len(AIPIPE_TOKEN))
+print("AIPIPE_TOKEN loaded:", bool(API))
+print("AIPIPE_TOKEN length:", len(API))
 client = OpenAI(
     base_url="https://aipipe.org/openai/v1",
     api_key=API,
