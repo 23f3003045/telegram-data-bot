@@ -15,14 +15,7 @@ client = OpenAI(
     api_key=API,
     timeout=60,
 )
-try:
-    test = client.chat.completions.create(
-        model="gpt-5-mini",
-        messages=[{"role": "user", "content": "Reply only OK"}],
-    )
-    print("AIPIPE TEST:", test.choices[0].message.content)
-except Exception as e:
-    print("AIPIPE STARTUP ERROR:", repr(e))
+
 LOG_FILE="run.jsonl"
 history={}
 def log(e):
